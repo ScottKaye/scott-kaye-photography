@@ -13,6 +13,10 @@ const HeadingElement = styled.h1<{ size: HeaderProps['size'] }>`
   font-size: 5em;
   text-align: center;
 
+  @media screen and (max-width: 550px) {
+    font-size: 3em;
+  }
+
   ${(props): SerializedStyles => {
     const sizeMap: { [key in HeaderProps['size']]: SerializedStyles } = {
       hero: css`

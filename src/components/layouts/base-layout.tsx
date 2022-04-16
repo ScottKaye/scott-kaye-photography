@@ -34,12 +34,13 @@ const Header = styled.div<{ hasPhoto: boolean }>`
   justify-items: center;
   align-items: center;
   margin-bottom: 20px;
+  padding: 30px;
 
   nav {
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 1em;
-    padding-top: 50px;
+    margin-top: 20px;
     letter-spacing: 0.15em;
 
     ul {
@@ -47,16 +48,17 @@ const Header = styled.div<{ hasPhoto: boolean }>`
       margin: 0;
       padding: 0;
       display: flex;
-      width: 100vw;
-      max-width: 600px;
+      flex-wrap: wrap;
+      width: 100%;
       justify-content: space-between;
-      gap: 20px;
+      gap: 40px 20px;
     }
 
     a {
+      display: block;
       text-decoration: none;
       color: inherit;
-      padding: 1em;
+      padding: 15px;
       position: relative;
 
       &:hover,
